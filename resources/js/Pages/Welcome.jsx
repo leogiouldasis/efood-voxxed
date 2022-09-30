@@ -45,7 +45,7 @@ export default function Welcome(props) {
 
                                     <div className="ml-4 text-lg leading-7 font-semibold">
                                         <a
-                                            href="https://laravel.com/docs"
+                                            href="https://github.com/leogiouldasis/efood-voxxed"
                                             className="underline text-gray-900 dark:text-white"
                                         >
                                             Built in 1 night!
