@@ -84,20 +84,7 @@ export default function Register() {
                     <InputError message={errors.password} className="mt-2" />
                 </div>
 
-                <div className="mt-4">
-                    <InputLabel forInput="password_confirmation" value="Confirm Password" />
-
-                    <TextInput
-                        type="password"
-                        name="password_confirmation"
-                        value={data.password_confirmation}
-                        className="mt-1 block w-full"
-                        handleChange={onHandleChange}
-                        required
-                    />
-
-                    <InputError message={errors.password_confirmation} className="mt-2" />
-                </div>
+                
 
                 <div className="flex items-center justify-end mt-4">
                     <Link href={route('login')} className="underline text-sm text-gray-600 hover:text-gray-900">
