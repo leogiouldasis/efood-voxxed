@@ -6,17 +6,6 @@ export default function Welcome(props) {
         <>
             <Head title="Welcome" />
             <div className="relative flex items-top justify-center min-h-screen bg-red-500 dark:bg-red-900 sm:items-center sm:pt-0">
-                <div className="fixed top-0 right-0 px-6 py-4 sm:block">
-                    {props.auth.user ? (
-                        <Link href={route('dashboard')} className="text-sm text-gray-700 dark:text-gray-500 underline">
-                            Randomizer Lottery!
-                        </Link>
-                    ) : (
-                        <>
-                            
-                        </>
-                    )}
-                </div>
 
                 <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
                     <div className="flex justify-center pt-8 sm:justify-center   sm:pt-0">
@@ -131,7 +120,11 @@ export default function Welcome(props) {
 
                                     <div className="ml-4 text-lg leading-7 font-semibold">
                                     {props.auth.user ? (
-                                        <></>
+                                        <>
+                                            <Link href={route('dashboard')} className="text-m text-gray-700 dark:text-gray-500 underline">
+                                                Board
+                                            </Link>
+                                        </>
                                     ) : (
                                         <>
                                             <Link href={route('login')} className="text-m text-gray-700 dark:text-gray-500 underline">
@@ -144,69 +137,79 @@ export default function Welcome(props) {
 
                                 <div className="ml-12">
                                     <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                        Play to Win or make others Lose!
-                                    </div>
-                                </div>
-
-                                
-                            </div>
-
-                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                                <div className="flex items-center">
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                    width="50" height="50" viewBox="0 0 482.000000 512.000000"
-                                    preserveAspectRatio="xMidYMid meet">
-
-                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-                                    fill="#ED2E2E" stroke="none">
-                                    <path d="M2147 5110 c-140 -17 -264 -67 -413 -165 -319 -211 -534 -578 -639
-                                    -1092 -24 -116 -26 -150 -27 -358 0 -264 15 -394 64 -542 17 -51 46 -117 65
-                                    -148 l35 -55 176 -1 177 0 138 -159 c75 -88 137 -164 137 -169 0 -11 -124
-                                    -124 -305 -277 -121 -103 -138 -114 -235 -151 -450 -174 -766 -343 -918 -490
-                                    -218 -213 -382 -572 -399 -874 -6 -117 5 -171 40 -193 18 -11 280 -15 1464
-                                    -19 l1441 -6 -28 78 c-49 134 -63 235 -57 411 4 125 10 173 31 248 94 340 333
-                                    605 662 738 l102 41 -146 57 -145 58 -121 106 c-67 59 -147 132 -179 163 l-58
-                                    56 58 59 c32 33 109 121 172 196 l113 137 116 3 116 3 33 85 c42 108 89 298
-                                    104 423 17 143 7 453 -20 594 -100 530 -399 981 -778 1171 -128 65 -182 74
-                                    -458 77 -137 2 -281 0 -318 -5z m-67 -589 c50 -137 177 -313 304 -423 68 -59
-                                    184 -139 277 -191 74 -42 204 -152 360 -304 80 -79 149 -143 154 -143 14 0 -5
-                                    84 -34 145 -15 34 -58 98 -94 143 -37 45 -63 82 -59 82 4 0 32 -16 62 -36 212
-                                    -138 321 -394 290 -681 -18 -166 -38 -255 -65 -278 -12 -11 -79 -87 -147 -170
-                                    -166 -200 -258 -285 -362 -334 -273 -130 -558 -81 -780 134 -40 39 -128 135
-                                    -196 215 -68 80 -132 152 -142 160 -22 18 -61 167 -82 312 -67 468 24 862 280
-                                    1218 71 99 194 234 204 223 4 -4 17 -37 30 -72z m23 -2267 c227 -115 560 -106
-                                    767 19 l56 33 127 -121 127 -122 -21 -64 c-34 -104 -86 -188 -168 -269 -166
-                                    -164 -415 -243 -694 -219 -253 21 -483 131 -591 283 -50 70 -86 165 -86 228 0
-                                    42 3 45 98 125 53 45 126 111 161 147 l63 64 46 -35 c25 -19 77 -50 115 -69z"/>
-                                    <path d="M3857 1710 c-209 -26 -411 -137 -556 -305 -64 -74 -144 -233 -172
-                                    -340 -30 -115 -30 -289 0 -410 132 -535 727 -808 1221 -560 452 227 606 805
-                                    328 1232 -175 270 -502 422 -821 383z m227 -382 c13 -18 16 -54 16 -180 l0
-                                    -158 163 0 c113 0 167 -4 175 -12 8 -8 12 -50 12 -125 0 -101 -2 -113 -19
-                                    -123 -11 -6 -87 -10 -175 -10 l-156 0 0 -156 c0 -88 -4 -164 -10 -175 -10 -17
-                                    -22 -19 -123 -19 -75 0 -117 4 -125 12 -8 8 -12 62 -12 175 l0 163 -162 0
-                                    c-206 0 -198 -6 -198 140 0 77 4 111 13 119 8 6 77 12 178 13 l164 3 3 164 c1
-                                    101 7 170 13 178 8 9 42 13 120 13 100 0 109 -2 123 -22z"/>
-                                    </g>
-                                </svg>
-
-                                    <div className="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
                                     {props.auth.user ? (
                                         <></>
                                     ) : (
                                         <>
-                                            <Link href={route('register')} className="text-m text-gray-700 dark:text-gray-500 underline">
-                                                Randomizer Register
-                                            </Link>
+                                        Play to Win or make others Lose!
                                         </>
                                     )}
                                     </div>
                                 </div>
 
-                                <div className="ml-12">
-                                    <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                        Play to Win or make others Lose!
+                                
+                            </div>
+                            
+                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
+                                {props.auth.user ? (
+                                    <>
+                                        <Link href={'https://www.e-food.gr'} className="text-m text-gray-700 dark:text-gray-500 underline">
+                                            Empty Stomach?
+                                        </Link>
+                                    </>
+                                ) : (
+                                    <> 
+                                    <div className="flex items-center">
+                                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                            width="50" height="50" viewBox="0 0 482.000000 512.000000"
+                                            preserveAspectRatio="xMidYMid meet">
+
+                                            <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                            fill="#ED2E2E" stroke="none">
+                                            <path d="M2147 5110 c-140 -17 -264 -67 -413 -165 -319 -211 -534 -578 -639
+                                            -1092 -24 -116 -26 -150 -27 -358 0 -264 15 -394 64 -542 17 -51 46 -117 65
+                                            -148 l35 -55 176 -1 177 0 138 -159 c75 -88 137 -164 137 -169 0 -11 -124
+                                            -124 -305 -277 -121 -103 -138 -114 -235 -151 -450 -174 -766 -343 -918 -490
+                                            -218 -213 -382 -572 -399 -874 -6 -117 5 -171 40 -193 18 -11 280 -15 1464
+                                            -19 l1441 -6 -28 78 c-49 134 -63 235 -57 411 4 125 10 173 31 248 94 340 333
+                                            605 662 738 l102 41 -146 57 -145 58 -121 106 c-67 59 -147 132 -179 163 l-58
+                                            56 58 59 c32 33 109 121 172 196 l113 137 116 3 116 3 33 85 c42 108 89 298
+                                            104 423 17 143 7 453 -20 594 -100 530 -399 981 -778 1171 -128 65 -182 74
+                                            -458 77 -137 2 -281 0 -318 -5z m-67 -589 c50 -137 177 -313 304 -423 68 -59
+                                            184 -139 277 -191 74 -42 204 -152 360 -304 80 -79 149 -143 154 -143 14 0 -5
+                                            84 -34 145 -15 34 -58 98 -94 143 -37 45 -63 82 -59 82 4 0 32 -16 62 -36 212
+                                            -138 321 -394 290 -681 -18 -166 -38 -255 -65 -278 -12 -11 -79 -87 -147 -170
+                                            -166 -200 -258 -285 -362 -334 -273 -130 -558 -81 -780 134 -40 39 -128 135
+                                            -196 215 -68 80 -132 152 -142 160 -22 18 -61 167 -82 312 -67 468 24 862 280
+                                            1218 71 99 194 234 204 223 4 -4 17 -37 30 -72z m23 -2267 c227 -115 560 -106
+                                            767 19 l56 33 127 -121 127 -122 -21 -64 c-34 -104 -86 -188 -168 -269 -166
+                                            -164 -415 -243 -694 -219 -253 21 -483 131 -591 283 -50 70 -86 165 -86 228 0
+                                            42 3 45 98 125 53 45 126 111 161 147 l63 64 46 -35 c25 -19 77 -50 115 -69z"/>
+                                            <path d="M3857 1710 c-209 -26 -411 -137 -556 -305 -64 -74 -144 -233 -172
+                                            -340 -30 -115 -30 -289 0 -410 132 -535 727 -808 1221 -560 452 227 606 805
+                                            328 1232 -175 270 -502 422 -821 383z m227 -382 c13 -18 16 -54 16 -180 l0
+                                            -158 163 0 c113 0 167 -4 175 -12 8 -8 12 -50 12 -125 0 -101 -2 -113 -19
+                                            -123 -11 -6 -87 -10 -175 -10 l-156 0 0 -156 c0 -88 -4 -164 -10 -175 -10 -17
+                                            -22 -19 -123 -19 -75 0 -117 4 -125 12 -8 8 -12 62 -12 175 l0 163 -162 0
+                                            c-206 0 -198 -6 -198 140 0 77 4 111 13 119 8 6 77 12 178 13 l164 3 3 164 c1
+                                            101 7 170 13 178 8 9 42 13 120 13 100 0 109 -2 123 -22z"/>
+                                            </g>
+                                        </svg>
+
+                                        <div className="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
+                                        <Link href={route('register')} className="text-m text-gray-700 dark:text-gray-500 underline">
+                                            Randomizer Register
+                                        </Link>
+                                        </div>
                                     </div>
-                                </div>
+
+                                    <div className="ml-12">
+                                        <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                            Play to Win or make others Lose!
+                                        </div>
+                                    </div>
+                                </>
+                            )}
                             </div>
                         </div>
                     </div>
