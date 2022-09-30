@@ -153,7 +153,7 @@ export default function Welcome(props) {
                             <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                                 {props.auth.user ? (
                                     <>
-                                        <Link href={'https://www.e-food.gr'} className="text-m text-gray-700 dark:text-gray-500 underline">
+                                        <Link href={'https://www.e-food.gr/'} target="_blank" className="text-m text-gray-700 dark:text-gray-500 underline">
                                             Empty Stomach?
                                         </Link>
                                     </>
