@@ -50,9 +50,9 @@ class RegisteredUserController extends Controller
         $users = User::get();
         $users = $users->shuffle();
         $rank = 1;
-        foreach($users as $user) {
-            $user->shuffle_rank = $rank;
-            $user->save();
+        foreach($users as $u) {
+            $u->shuffle_rank = $rank;
+            $u->save();
             $rank = $rank + 1;
         }
 
