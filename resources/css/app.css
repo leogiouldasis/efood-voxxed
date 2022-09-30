@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.winners-list {
+    list-style-type: none;
+    padding:20px;
+}
+
+.winners-list li {
+    padding-top: 10px;
+    border-bottom: 1px solid red;
+}
+
+.winners-list li:first-child {
+    size: 10px;
+    font-size: 1.8rem;
+}
