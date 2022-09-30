@@ -39,41 +39,32 @@ export default function Welcome(props) {
                     
                     <div className="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                         <div className="grid grid-cols-1 md:grid-cols-2">
-                            <div className="p-6">
-                                <div className="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-
-                                    <div className="ml-4 text-lg leading-7 font-semibold">
-                                        <a
-                                            href="https://github.com/leogiouldasis/efood-voxxed"
-                                            className="underline text-gray-900 dark:text-white"
-                                        >
-                                            Built in 1 night!
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div className="ml-12">
-                                    <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                        This is a bootstrapping demostration from eFood with Love!
-                                    </div>
-                                </div>
-                            </div>
-
                             <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
                                 <div className="flex items-center">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        viewBox="0 0 24 24"
-                                        className="w-8 h-8 text-gray-500"
-                                    >
-                                        <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
-                                        <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                    </svg>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="50" height="50" viewBox="0 0 500.000000 500.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+                                    fill="#000000" stroke="none">
+                                    <path d="M2272 4969 c-575 -51 -1105 -300 -1518 -713 -150 -150 -215 -227
+                                    -311 -371 -220 -328 -347 -667 -405 -1080 -16 -116 -16 -484 0 -600 63 -449
+                                    218 -833 475 -1180 105 -143 359 -397 502 -502 347 -257 731 -412 1180 -475
+                                    50 -7 185 -12 300 -12 290 0 515 34 768 118 375 124 676 307 960 585 757 740
+                                    959 1863 507 2826 -198 423 -555 815 -970 1065 -437 264 -970 385 -1488 339z
+                                    m502 -2109 c278 -71 437 -309 396 -595 -43 -298 -312 -742 -605 -995 -423
+                                    -367 -809 -446 -1152 -235 -107 66 -270 231 -355 360 -172 260 -304 623 -363
+                                    1000 -8 55 -18 175 -22 268 l-6 167 221 0 222 0 4 -22 c3 -13 10 -81 16 -153
+                                    68 -755 279 -1205 623 -1325 87 -30 222 -37 307 -15 210 54 424 228 589 479
+                                    129 197 181 332 181 471 0 123 -57 208 -159 235 -58 15 -131 -2 -178 -43 -126
+                                    -110 -106 -323 51 -567 25 -39 46 -79 46 -89 0 -44 -161 -240 -178 -216 -4 6
+                                    -32 44 -63 85 -182 243 -279 481 -279 684 0 154 44 268 140 365 135 137 360
+                                    193 564 141z m1454 -557 c131 -7 122 9 92 -166 -83 -487 -387 -902 -752 -1028
+                                    -168 -58 -326 -62 -491 -14 -76 22 -247 98 -247 109 0 3 46 50 102 105 l102
+                                    101 80 -31 c111 -44 251 -52 353 -21 265 81 467 408 543 880 l12 72 46 0 c26
+                                    0 98 -3 160 -7z"/>
+                                    </g>
+                                </svg>
 
                                     <div className="ml-4 text-lg leading-7 font-semibold">
                                         <a
@@ -97,19 +88,46 @@ export default function Welcome(props) {
                                 </div>
                             </div>
 
+                            <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
+                                <div className="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="50" height="50" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+
+                                    <div className="ml-4 text-lg leading-7 font-semibold">
+                                        <a
+                                            href="https://github.com/leogiouldasis/efood-voxxed"
+                                            className="underline text-gray-900 dark:text-white"
+                                        >
+                                            Built in 1 night!
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="ml-12">
+                                    <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                        This is a bootstrapping demostration from eFood with Love!
+                                    </div>
+                                </div>
+                            </div>
+
                             <div className="p-6 border-t border-gray-200 dark:border-gray-700">
                                 <div className="flex items-center">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        viewBox="0 0 24 24"
-                                        className="w-8 h-8 text-gray-500"
-                                    >
-                                        <path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
-                                    </svg>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="40.000000pt" height="40.000000pt" viewBox="0 0 50.000000 50.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
+                                    fill="#ED2E2E" stroke="none">
+                                    <path d="M160 459 c-52 -23 -86 -53 -106 -91 -33 -63 -2 -80 37 -21 60 93 173
+                                    119 260 60 90 -60 114 -172 56 -258 -79 -118 -238 -116 -316 4 -26 40 -51 49
+                                    -51 18 0 -27 40 -82 79 -108 71 -48 151 -55 226 -19 60 28 87 56 114 116 27
+                                    60 26 123 -3 185 -28 60 -56 87 -116 114 -57 26 -123 26 -180 0z"/>
+                                    <path d="M255 329 c-4 -6 3 -21 15 -34 l23 -24 -134 -3 c-111 -3 -134 -6 -134
+                                    -18 0 -12 23 -15 134 -18 l134 -3 -23 -24 c-19 -20 -21 -28 -12 -37 10 -10 23
+                                    -2 59 35 l47 47 -44 45 c-46 47 -55 52 -65 34z"/>
+                                    </g>
+                                </svg>
 
                                     <div className="ml-4 text-lg leading-7 font-semibold">
                                     {props.auth.user ? (
@@ -124,22 +142,52 @@ export default function Welcome(props) {
                                     </div>
                                 </div>
 
+                                <div className="ml-12">
+                                    <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                        Play to Win or make others Lose!
+                                    </div>
+                                </div>
+
                                 
                             </div>
 
                             <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                                 <div className="flex items-center">
-                                    <svg
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        viewBox="0 0 24 24"
-                                        className="w-8 h-8 text-gray-500"
-                                    >
-                                        <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                    </svg>
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                    width="50" height="50" viewBox="0 0 482.000000 512.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                    fill="#ED2E2E" stroke="none">
+                                    <path d="M2147 5110 c-140 -17 -264 -67 -413 -165 -319 -211 -534 -578 -639
+                                    -1092 -24 -116 -26 -150 -27 -358 0 -264 15 -394 64 -542 17 -51 46 -117 65
+                                    -148 l35 -55 176 -1 177 0 138 -159 c75 -88 137 -164 137 -169 0 -11 -124
+                                    -124 -305 -277 -121 -103 -138 -114 -235 -151 -450 -174 -766 -343 -918 -490
+                                    -218 -213 -382 -572 -399 -874 -6 -117 5 -171 40 -193 18 -11 280 -15 1464
+                                    -19 l1441 -6 -28 78 c-49 134 -63 235 -57 411 4 125 10 173 31 248 94 340 333
+                                    605 662 738 l102 41 -146 57 -145 58 -121 106 c-67 59 -147 132 -179 163 l-58
+                                    56 58 59 c32 33 109 121 172 196 l113 137 116 3 116 3 33 85 c42 108 89 298
+                                    104 423 17 143 7 453 -20 594 -100 530 -399 981 -778 1171 -128 65 -182 74
+                                    -458 77 -137 2 -281 0 -318 -5z m-67 -589 c50 -137 177 -313 304 -423 68 -59
+                                    184 -139 277 -191 74 -42 204 -152 360 -304 80 -79 149 -143 154 -143 14 0 -5
+                                    84 -34 145 -15 34 -58 98 -94 143 -37 45 -63 82 -59 82 4 0 32 -16 62 -36 212
+                                    -138 321 -394 290 -681 -18 -166 -38 -255 -65 -278 -12 -11 -79 -87 -147 -170
+                                    -166 -200 -258 -285 -362 -334 -273 -130 -558 -81 -780 134 -40 39 -128 135
+                                    -196 215 -68 80 -132 152 -142 160 -22 18 -61 167 -82 312 -67 468 24 862 280
+                                    1218 71 99 194 234 204 223 4 -4 17 -37 30 -72z m23 -2267 c227 -115 560 -106
+                                    767 19 l56 33 127 -121 127 -122 -21 -64 c-34 -104 -86 -188 -168 -269 -166
+                                    -164 -415 -243 -694 -219 -253 21 -483 131 -591 283 -50 70 -86 165 -86 228 0
+                                    42 3 45 98 125 53 45 126 111 161 147 l63 64 46 -35 c25 -19 77 -50 115 -69z"/>
+                                    <path d="M3857 1710 c-209 -26 -411 -137 -556 -305 -64 -74 -144 -233 -172
+                                    -340 -30 -115 -30 -289 0 -410 132 -535 727 -808 1221 -560 452 227 606 805
+                                    328 1232 -175 270 -502 422 -821 383z m227 -382 c13 -18 16 -54 16 -180 l0
+                                    -158 163 0 c113 0 167 -4 175 -12 8 -8 12 -50 12 -125 0 -101 -2 -113 -19
+                                    -123 -11 -6 -87 -10 -175 -10 l-156 0 0 -156 c0 -88 -4 -164 -10 -175 -10 -17
+                                    -22 -19 -123 -19 -75 0 -117 4 -125 12 -8 8 -12 62 -12 175 l0 163 -162 0
+                                    c-206 0 -198 -6 -198 140 0 77 4 111 13 119 8 6 77 12 178 13 l164 3 3 164 c1
+                                    101 7 170 13 178 8 9 42 13 120 13 100 0 109 -2 123 -22z"/>
+                                    </g>
+                                </svg>
 
                                     <div className="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
                                     {props.auth.user ? (
@@ -155,7 +203,9 @@ export default function Welcome(props) {
                                 </div>
 
                                 <div className="ml-12">
-                                    
+                                    <div className="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                                        Play to Win or make others Lose!
+                                    </div>
                                 </div>
                             </div>
                         </div>

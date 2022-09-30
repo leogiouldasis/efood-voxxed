@@ -17,3 +17,7 @@
     size: 10px;
     font-size: 1.8rem;
 }
+
+a.underline.text-gray-900.dark\:text-white {
+    font-size: 20px;
+}

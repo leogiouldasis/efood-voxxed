@@ -4,6 +4,7 @@ import { Link, Head } from '@inertiajs/inertia-react';
 import { countBy } from 'lodash';
 
 export default function Dashboard(props) {
+    console.log(props)
     const users = props.users.map((user) => <li key={user.id}>{user.name} - {user.email}</li>);
     return (
         <AuthenticatedLayout

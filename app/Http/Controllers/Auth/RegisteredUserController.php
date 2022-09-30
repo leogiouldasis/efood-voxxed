@@ -44,7 +44,17 @@ class RegisteredUserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'shuffle_rank' => 100
         ]);
+
+        $users = User::get();
+        $users = $users->shuffle();
+        $rank = 1;
+        foreach($users as $user) {
+            $user->shuffle_rank = $rank;
+            $user->save();
+            $rank = $rank + 1;
+        }
 
         event(new Registered($user));
 
