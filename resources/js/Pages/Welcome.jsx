@@ -153,7 +153,7 @@ export default function Welcome(props) {
                             <div className="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                                 {props.auth.user ? (
                                     <>
-                                        <a href={'https://www.e-food.gr/'} target="_blank" className="text-m text-gray-700 dark:text-gray-500 underline">
+                                        <a href={'https://www.e-food.gr/'} target="_blank" className="text-lg text-gray-700 dark:text-gray-500 underline">
                                             Empty Stomach?
                                         </a>
                                     </>
@@ -215,7 +215,7 @@ export default function Welcome(props) {
                         </div>
                     </div>
 
-                    <h3 className="scan-to-win">Scan to Win</h3>
+                    <h3 className="scan-to-win">Scan to Win!</h3>
 
                     <div className="flex justify-center pt-8 sm:justify-center" color="#fff">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"

@@ -10,14 +10,27 @@ export default function Dashboard(props) {
         <AuthenticatedLayout
             auth={props.auth}
             errors={props.errors}
-            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Efood Voxxed Randomizer!</h2>}
+            header={<h2 className="font-semibold text-xl text-gray-800 leading-tight">Efood Voxxed Coupon Winners!</h2>}
         >
             <Head title="Voxxed Randomizer" />
 
             <div className="total">
-                {"Total registrations: " + users.length} / Registrations Closing 15:00
+                {"Total registrations: " + users.length} / Registrations Closing 15:00 / First 10 to win!
             </div>
-            {/* <div className="flex justify-center pt-8 sm:justify-center sm:pt-20" color="#fff">
+
+            <div className="countdown">
+            {/* <Countdown date={Date.now() + 10000} /> */}
+            </div>
+
+            <div className="py-12">
+                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg winners-list">
+                        {users}
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex justify-center pt-8 sm:justify-center sm:pt-20" color="#fff">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="450.000000pt" height="450.000000pt" viewBox="0 0 450.000000 450.000000"
  preserveAspectRatio="xMidYMid meet" className='svg-qr'>
@@ -1158,19 +1171,7 @@ m494 -98 c48 -22 55 -51 55 -238 0 -253 3 -250 -250 -250 -254 0 -250 -3 -250
 -60 0z"/>
 </g>
 </svg>
-                    </div> */}
-
-            <div className="countdown">
-            {/* <Countdown date={Date.now() + 10000} /> */}
-            </div>
-
-            <div className="py-12">
-                <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                    <div className="bg-white overflow-hidden shadow-sm sm:rounded-lg winners-list">
-                        {users}
                     </div>
-                </div>
-            </div>
         </AuthenticatedLayout>
     );
 }
