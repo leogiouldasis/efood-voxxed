@@ -36,4 +36,13 @@ a.underline.text-gray-900.dark\:text-white {
 .svg-qr {
     transform: scale(0.5);
     transform-origin: top;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.scan-to-win {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
 }

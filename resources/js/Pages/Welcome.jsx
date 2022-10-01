@@ -128,7 +128,7 @@ export default function Welcome(props) {
                                     ) : (
                                         <>
                                             <Link href={route('login')} className="text-m text-gray-700 dark:text-gray-500 underline">
-                                                Randomizer Login
+                                                Coupon Lottery Login
                                             </Link>
                                         </>
                                     )}
@@ -199,7 +199,7 @@ export default function Welcome(props) {
 
                                         <div className="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
                                         <Link href={route('register')} className="text-m text-gray-700 dark:text-gray-500 underline">
-                                            Randomizer Register
+                                            Coupon Lottery Register
                                         </Link>
                                         </div>
                                     </div>
@@ -215,7 +215,9 @@ export default function Welcome(props) {
                         </div>
                     </div>
 
-                    <div className="flex justify-center pt-8 sm:justify-center sm:pt-20" color="#fff">
+                    <h3 className="scan-to-win">Scan to Win</h3>
+
+                    <div className="flex justify-center pt-8 sm:justify-center" color="#fff">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="450.000000pt" height="450.000000pt" viewBox="0 0 450.000000 450.000000"
  preserveAspectRatio="xMidYMid meet" className='svg-qr'>
