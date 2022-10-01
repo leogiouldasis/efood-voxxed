@@ -5,7 +5,6 @@ import { Link, Head } from '@inertiajs/inertia-react';
 import { countBy } from 'lodash';
 
 export default function Dashboard(props) {
-    console.log(props)
     const users = props.users.map((user, userIdx) => <li className={userIdx <= 9 ? "winner" : ""} key={user.id}>{user.shuffle_rank + ")"} {user.name + " "}</li>);
     return (
         <AuthenticatedLayout

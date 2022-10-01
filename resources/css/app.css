@@ -32,3 +32,8 @@ a.underline.text-gray-900.dark\:text-white {
     color: #fff;
     padding-top: 40px;
 }
+
+.svg-qr {
+    transform: scale(0.5);
+    transform-origin: top;
+}
