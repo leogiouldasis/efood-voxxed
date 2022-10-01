@@ -3,8 +3,8 @@ import React from 'react';
 export default function ApplicationLogo({ className }) {
     return (
         <svg
-            width="100" height="100" 
-            viewBox="10 0 100 56"
+            width="200" height="100" 
+            viewBox="10 0 200 56"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="h-16 w-auto text-gray-700 sm:h-40"
