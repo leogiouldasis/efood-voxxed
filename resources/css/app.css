@@ -13,11 +13,22 @@
     border-bottom: 1px solid red;
 }
 
-.winners-list li:first-child {
-    size: 10px;
-    font-size: 1.8rem;
-}
-
 a.underline.text-gray-900.dark\:text-white {
     font-size: 20px;
+}
+
+.winners-list .winner {
+    font-weight: bold;
+}
+
+.winners-list .winner::after {
+    content: "⭐️"
+}
+
+.total {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 40px;
 }
